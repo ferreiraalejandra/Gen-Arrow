@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gen Arrow</title>
+  <link rel="stylesheet" href="../styles/dependencies/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/importer.css">
+</head>
+<body>
+  <canvas width="800" height="300"></canvas>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-4">
+        <div class="row-fluid">
+          <strong>Model</strong>
+        </div>
+        <div class="row-fluid">
+          <textarea name="model" id="model-data" cols="30" rows="10">70269	70574	+	099	A
+70695	71231	+	098	C
+71906	72448	+	096	T
+73580	72480	-	094	G
+73681	74322	+	092	A
+74381	75121	+	090	C
+75219	76865	+	088	T
+80750	76866	-	086	G
+81834	80941	-	084	A
+82135	82455	+	082	A
+83554	82592	-	080	A
+84084	83587	-	078	A
+86540	84081	-	076	A
+87982	86537	-	074	A
+87995	88693	+	072	A
+89066	89392	+	070	A
+89396	89968	+	068	A
+89965	90990	+	066	A
+90987	91919	+	064	A
+91916	93031	+	062	A
+93028	93492	+	060	A
+93489	94631	+	058	A
+94631	94936	+	056	A
+94933	96135	+	054	A
+96141	96821	+	052	A
+96818	97975	+	050	A
+97972	99285	+	048	A
+99908	99720	-	047	A
+100135	100374	+	044	A
+100765	100941	+	042	A
+101030	100954	-	040	A
+102779	101139	-	990	A
+104179	102974	-	850	A
+107490	104266	-	820	A
+107473	107613	+	760	A
+110479	107645	-	730	A
+110946	110725	-	700	A
+112701	111172	-	633	A</textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row-fluid">
+          <strong>Escale</strong>
+        </div>
+        <div class="row-fluid">
+          <input type="text" id="scale" value="10"/>
+        </div>
+        <div class="row-fluid">
+          <strong>Row Escale</strong>
+        </div>
+        <div class="row-fluid">
+          <input type="text" id="row-scale"/>
+        </div>
+        <div class="row-fluid">
+          <strong>Row Head</strong>
+        </div>
+        <div class="row-fluid">
+          <input type="text" id="row-head" value="10"/>
+        </div>
+        <div class="row-fluid">
+          <strong>Row Weight</strong>
+        </div>
+        <div class="row-fluid">
+          <input type="text" id="head-weight" value="25"/>
+        </div>
+        <div class="row-fluid">
+          <div class="col-md-4 col-offset-8">
+            <a href="#" class="btn-sucess" id="btn-generate">Generate</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row-fluid">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Menor: </span>
+            <input id="minor-weight" type="text" class="form-control" placeholder="menor" aria-describedby="basic-addon1" value="110">
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon2">Mayor: </span>
+            <input id="main-weight" type="text" class="form-control" placeholder="mayor" aria-describedby="basic-addon1" value="500">
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Context Rate: </span>
+            <input id="context-rate" type="text" class="form-control" placeholder="mayor" aria-describedby="basic-addon1" value="3">
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon4">Context Lenght: </span>
+            <input id="context-lenght" type="text" class="form-control" placeholder="mayor" aria-describedby="basic-addon1" value="915">
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon5">Context Height: </span>
+            <input id="context-height" type="text" class="form-control" placeholder="mayor" aria-describedby="basic-addon1" value="230">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="../js/dependencies/sails.io.js"></script>
+  <script src="../js/dependencies/jquery.min.js"></script>
+  <script src="../js/gen-arrow.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!--SCRIPTS END-->
+</body>
+</html>
